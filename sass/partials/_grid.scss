@@ -29,6 +29,20 @@ section {
 .two-column_inner {
 	@include span-columns(2 of 4);
 }
+.containing-column {
+	@include span-columns(8);
+	@include shift(2);
+}
+.two-column {
+	@include span-columns(4 of 8);
+}
+.two-column__right {
+	@include span-columns(2 of 8);
+	@include shift(6);
+}
+.message-column {
+	@include span-columns(8 of 8);
+}
 .row {
 	@include row();
 }

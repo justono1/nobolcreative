@@ -1,6 +1,7 @@
 //Icon sizes
 $size1: #{(24/16)}em;
 $size2: #{(15/16)}em;
+$size3: #{(368/16)}em;
 
 @font-face {
 	font-family: 'nobol-icon';
@@ -37,13 +38,19 @@ $size2: #{(15/16)}em;
 @include icon(facebook, "\e601", $size2, $white);
 @include icon(instagram, "\e602", $size2, $white);
 @include icon(googlePlus, "\e60a", $size2, $white);
-@include icon(logoBug, "\e608", $size1, $white);
+@include icon(logoBug, "\e608", $size3, rgba($white, 0.1));
 
 .icon-dwnArrowWhite {
 	position: absolute;
 	bottom: 30px;
 	left: 49%;
 	z-index: 1;
+}
+.icon-logoBug {
+	position: absolute;
+	left: 29.5%;
+	top: 28px;
+	z-index: 0;
 }
 
 .computer-svg, .browser-svg, .identity-svg {

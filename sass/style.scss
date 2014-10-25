@@ -16,11 +16,13 @@
 
 
 //Custom CSS
-html {
-	height: 100%;
+* {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+html {
+	height: 100%;
 }
 body {
 	height: 100%;
@@ -100,9 +102,52 @@ nav {
 	@include bgcover(testomonials, 600px);
 }
 
+//CONTACT STYLES
+.contact {
+	padding-bottom: 35px;
+}
+input, textarea, .select-container {
+	width: 100%;
+	@include border-box();
+	border-radius: 4px;
+	border: 1px solid $lightGray;
+	color: $darkGray;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-bottom: 11px;
+	font-size: $primaryType;
+}
+textarea {
+	resize: none;
+}
+form {
+	margin-top: 45px;
+}
+
 //FOOTER STYLES
 footer {
 	@include bgcover(footer, 450px);
+	h1 {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		display: inline-block;
+		margin-top: 180px;
+		margin-bottom: 172px;
+	}
+	p {
+		font-weight: $light;
+		text-align: center;
+		color: $white;
+		a {
+			color: $white;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 

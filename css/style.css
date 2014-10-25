@@ -245,6 +245,48 @@ section:after {
   margin-right: 0;
 }
 
+.containing-column {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
+}
+.containing-column:last-child {
+  margin-right: 0;
+}
+
+.two-column {
+  float: left;
+  display: block;
+  margin-right: 3.5786636068%;
+  width: 48.2106681966%;
+}
+.two-column:last-child {
+  margin-right: 0;
+}
+
+.two-column__right {
+  float: left;
+  display: block;
+  margin-right: 3.5786636068%;
+  width: 22.3160022949%;
+  margin-left: 77.6839977051%;
+}
+.two-column__right:last-child {
+  margin-right: 0;
+}
+
+.message-column {
+  float: left;
+  display: block;
+  margin-right: 3.5786636068%;
+  width: 100%;
+}
+.message-column:last-child {
+  margin-right: 0;
+}
+
 .row {
   display: block;
 }
@@ -395,13 +437,13 @@ p {
 
 .icon-logoBug:before {
   content: "";
-  font-size: 1.5em;
-  color: #fff;
+  font-size: 23em;
+  color: rgba(255, 255, 255, 0.1);
   font-style: normal;
 }
 
 .icon-logoBug:before:hover {
-  color: white;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .icon-dwnArrowWhite {
@@ -409,6 +451,13 @@ p {
   bottom: 30px;
   left: 49%;
   z-index: 1;
+}
+
+.icon-logoBug {
+  position: absolute;
+  left: 29.5%;
+  top: 28px;
+  z-index: 0;
 }
 
 .computer-svg, .browser-svg, .identity-svg {
@@ -473,11 +522,25 @@ p {
   border-color: white;
 }
 
-html {
-  height: 100%;
+.btn-blue {
+  font-weight: 300;
+  color: #fff;
+  background: #007b91;
+  border: 1px solid #007b91;
+  width: 100%;
+}
+.btn-blue:hover {
+  background: #0091ab;
+}
+
+* {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -573,6 +636,33 @@ nav .icon-contact {
   height: 600px;
 }
 
+.contact {
+  padding-bottom: 35px;
+}
+
+input, textarea, .select-container {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ededed;
+  color: #2e3137;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-bottom: 11px;
+  font-size: 0.875em;
+}
+
+textarea {
+  resize: none;
+}
+
+form {
+  margin-top: 45px;
+}
+
 footer {
   background: url("../img/footer.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -580,4 +670,24 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   height: 450px;
+}
+footer h1 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  margin-top: 180px;
+  margin-bottom: 172px;
+}
+footer p {
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: none;
 }

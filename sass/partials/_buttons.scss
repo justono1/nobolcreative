@@ -41,5 +41,9 @@
 .btn-outline {
 	@include btn-outline($light, $white, 1px, $white);
 }
+.btn-blue {
+	@include btn-solid($light, $white, $blue);
+	width: 100%;
+}
 
 
