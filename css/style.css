@@ -683,20 +683,64 @@ nav .icon-contact {
   text-align: center;
 }
 #pager a {
+  position: relative;
   text-indent: -9999em;
   border-radius: 40px;
   width: 2px;
   height: 2px;
-  padding: 5px;
-  border: 1px solid #fff;
-  background: none;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.4);
   display: inline-block;
   margin-right: 5px;
 }
-#pager .activeSlide {
+#pager .circle__small {
+  position: absolute;
+  top: 51%;
+  left: 44%;
   background: #fff;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  border-radius: 40px;
+  animation: empty .8s;
+  -moz-animation: empty .8s;
+  -webkit-animation: empty .8s;
+  -webkit-transition-timing-function: ease-in;
+}
+#pager .activeSlide .circle__small {
+  animation: fill .8s;
+  -moz-animation: fill .8s;
+  -webkit-animation: fill .8s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transition-timing-function: ease-in;
 }
 
+@-webkit-keyframes fill /* Safari and Chrome */ {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 0%;
+  }
+}
+@-webkit-keyframes empty /* Safari and Chrome */ {
+  from {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 0%;
+  }
+  to {
+    height: 0px;
+    width: 0px;
+  }
+}
 .person {
   font-weight: 700;
   font-style: normal;

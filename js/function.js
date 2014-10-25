@@ -5,9 +5,14 @@ $(document).ready(function() {
 
   $(".slideshow").cycle({
   	fx: "fade",
-  	timeout: 6000,
-  	pager: '#pager'
-  });
+  	timeout: 2000,
+  	speed: 1000,
+  	pager: '#pager',
+  	pause: true,
+  	pagerAnchorBuilder: function(idx, slide) {
+        return '<a href="#"><div class="circle__small"></div></a>';
+    }
+	});
 
   $.validate({
     validateOnBlur : false,
