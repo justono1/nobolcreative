@@ -1,189 +1,37 @@
-// Third Party Imports
-@import "vendor/bourbon/bourbon";
-@import "vendor/neat/neat";
-
-// Modules and Variables
-
-@import "partials/base";
-
-//Partials
-@import "partials/reset";
-@import "partials/colors";
-@import "partials/grid";
-@import "partials/typography";
-@import "partials/icons";
-@import "partials/buttons";
-
-
-//Custom CSS
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-html {
-	height: 100%;
-}
-body {
-	height: 100%;
-}
-
-//HEADER STYLES
-header {
-	@include bgcover(header, 100%);
-	h1 {
-		margin-top: 200px;
-		margin-bottom: 50px;
-	}
-}
-nav {
-	position: relative;
-	padding-top: 40px;
-	.icon-contact {
-		position: absolute;
-		top: 16px;
-		right: 0;
-	}
-}
-.bgoverlay {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 0;
-}
-.bgoverlay__header {
-	background: rgba($darkGray, 0.8);
-}
-.bgoverlay__testomonials {
-	background: rgba($orange, 0.8);
-}
-.bgoverlay__footer {
-	background: rgba($darkGray, 0.9);
-}
-//SERVICES STYLES
-.circle {
-	margin: 0 auto;
-	position: relative;
-	border-radius: 100px;
-	height: 2px;
-	width: 2px;
-	padding: 75px;
-}
-.circle__blue {
-	background: $blue2;
-}
-.circle__orange {
-	background: $orange;
-}
-.services {
-	padding-bottom: 100px;
-	p {
-		text-align: center;
-	}
-	.three-column {
-		margin-top: 80px;
-	}
-	h3 {
-		margin-top: 25px;
-		margin-bottom: 13px;
-	}
-}
-
-//QUOTE STYLES
-.quote {
-	background: $darkGray;
-	padding: 90px 0px;
-}
-
-//TESTOMONIAL STYLES
-.testomonials {
-	@include bgcover(testomonials, 600px);
-}
-
-//CONTACT STYLES
-.contact {
-	padding-bottom: 35px;
-}
-input, textarea, .select-container {
-	width: 100%;
-	@include border-box();
-	border-radius: 4px;
-	border: 1px solid $lightGray;
-	color: $darkGray;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 15px;
-	margin-bottom: 11px;
-	font-size: $primaryType;
-	font-family: 'Raleway';
-	font-weight: $medium;
-	-webkit-appearance: none;
-}
-textarea {
-	resize: none;
-	height: 200px;
-	margin-top: 15px;
-}
-form {
-	margin-top: 45px;
-}
-
-//FOOTER STYLES
-footer {
-	@include bgcover(footer, 450px);
-	h1 {
-		position: relative;
-		z-index: 1;
-		width: 100%;
-		display: inline-block;
-		margin-top: 180px;
-		margin-bottom: 172px;
-	}
-	p {
-		font-weight: $light;
-		text-align: center;
-		color: $white;
-		a {
-			color: $white;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-}
-///////////////////////////////
-//FANCY SELECT STYLES
-///////////////////////////////
 div.fancy-select {
 	position: relative;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 13px;
-	color: $darkGray;
+	color: #46565D;
 }
 
 div.fancy-select.disabled {
 	opacity: 0.5;
 }
 
+div.fancy-select select:focus + div.trigger {
+	box-shadow: 0 0 0 2px #4B5468;
+}
+
+div.fancy-select select:focus + div.trigger.open {
+	box-shadow: none;
+}
+
 div.fancy-select div.trigger {
 	border-radius: 4px;
 	cursor: pointer;
-	padding: 15px 24px 15px 15px;
+	padding: 10px 24px 9px 9px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	position: relative;
-	background: none;
-	border: 1px solid $lightGray;
-	color: darken($gray,35%);
-	width: 100%;
-	font-family: 'Raleway';
-	font-weight: $medium;
-	text-transform: none;
+	background: #99A5BE;
+	border: 1px solid #99A5BE;
+	border-top-color: #A5B2CB;
+	color: #4B5468;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	width: 200px;
 
 	transition: all 240ms ease-out;
 	-webkit-transition: all 240ms ease-out;
@@ -193,19 +41,26 @@ div.fancy-select div.trigger {
 }
 
 div.fancy-select div.trigger:after {
-	content: "\e604";
+	content: "";
 	display: block;
-	font-family: 'nobol-icon';
 	position: absolute;
-	font-size: $size2;
-	color: darken($gray, 35%);
-	top: 18px;
-	right: 14px;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #4B5468;
+	top: 20px;
+	right: 9px;
 }
 
 div.fancy-select div.trigger.open {
-	border: 1px solid $blue;
+	background: #4A5368;
+	border: 1px solid #475062;
+	color: #7A8498;
 	box-shadow: none;
+}
+
+div.fancy-select div.trigger.open:after {
+	border-top-color: #7A8498;
 }
 
 div.fancy-select ul.options {
@@ -218,12 +73,12 @@ div.fancy-select ul.options {
 	opacity: 0;
 	z-index: 50;
 	max-height: 200px;
-	width: 100%;
 	overflow: auto;
-	background: $gray;
+	background: #62C8BF;
 	border-radius: 4px;
+	border-top: 1px solid #7DD8D2;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	min-width: 200px;
-	text-transform: none;
 
 	transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
 	-webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
@@ -270,7 +125,7 @@ div.fancy-select ul.options.overflowing.open {
 
 div.fancy-select ul.options li {
 	padding: 8px 12px;
-	color: darken($gray, 35%);
+	color: #2B8686;
 	cursor: pointer;
 	white-space: nowrap;
 
@@ -282,15 +137,10 @@ div.fancy-select ul.options li {
 }
 
 div.fancy-select ul.options li.selected {
-	background: darken($gray, 15%);
-	color: $darkGray;
+	background: rgba(43,134,134,0.3);
+	color: rgba(255,255,255,0.75);
 }
 
 div.fancy-select ul.options li.hover {
 	color: #fff;
-	background: darken($gray, 15%);
 }
-
-
-//@import "modules/animations";
-

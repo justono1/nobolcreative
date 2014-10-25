@@ -499,6 +499,7 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1em;
+  -webkit-appearance: none;
 }
 
 .btn-orange {
@@ -653,10 +654,15 @@ input, textarea, .select-container {
   padding-left: 15px;
   margin-bottom: 11px;
   font-size: 0.875em;
+  font-family: 'Raleway';
+  font-weight: 500;
+  -webkit-appearance: none;
 }
 
 textarea {
   resize: none;
+  height: 200px;
+  margin-top: 15px;
 }
 
 form {
@@ -690,4 +696,132 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: none;
+}
+
+div.fancy-select {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #2e3137;
+}
+
+div.fancy-select.disabled {
+  opacity: 0.5;
+}
+
+div.fancy-select div.trigger {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 15px 24px 15px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  background: none;
+  border: 1px solid #ededed;
+  color: #9d9d9d;
+  width: 100%;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-transform: none;
+  transition: all 240ms ease-out;
+  -webkit-transition: all 240ms ease-out;
+  -moz-transition: all 240ms ease-out;
+  -ms-transition: all 240ms ease-out;
+  -o-transition: all 240ms ease-out;
+}
+
+div.fancy-select div.trigger:after {
+  content: "\e604";
+  display: block;
+  font-family: 'nobol-icon';
+  position: absolute;
+  font-size: 0.9375em;
+  color: #9d9d9d;
+  top: 18px;
+  right: 14px;
+}
+
+div.fancy-select div.trigger.open {
+  border: 1px solid #007b91;
+  box-shadow: none;
+}
+
+div.fancy-select ul.options {
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 50;
+  max-height: 200px;
+  width: 100%;
+  overflow: auto;
+  background: #f6f6f6;
+  border-radius: 4px;
+  min-width: 200px;
+  text-transform: none;
+  transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.open {
+  visibility: visible;
+  top: 50px;
+  opacity: 1;
+  /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+  /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+  transition: opacity 300ms ease-out, top 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing {
+  top: auto;
+  bottom: 40px;
+  transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+div.fancy-select ul.options.overflowing.open {
+  top: auto;
+  bottom: 50px;
+  transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+  -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+div.fancy-select ul.options li {
+  padding: 8px 12px;
+  color: #9d9d9d;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out;
+  -ms-transition: all 150ms ease-out;
+  -o-transition: all 150ms ease-out;
+}
+
+div.fancy-select ul.options li.selected {
+  background: #d0d0d0;
+  color: #2e3137;
+}
+
+div.fancy-select ul.options li.hover {
+  color: #fff;
+  background: #d0d0d0;
 }

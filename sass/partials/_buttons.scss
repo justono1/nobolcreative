@@ -8,6 +8,7 @@
 	@include transition(all .3s linear);
 	@include border-box();
 	font-size: $normalType;
+	-webkit-appearance: none;
 }
 
 .btn {

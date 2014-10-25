@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".services-select").fancySelect(),$(".budget-select").fancySelect(),$.validate({validateOnBlur:!1,showHelpOnFocus:!1,modules:"file"})});
