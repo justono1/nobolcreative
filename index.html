@@ -65,20 +65,32 @@
 	<section class="testomonials">
 		<div class="bgoverlay bgoverlay__testomonials"></div>
 		<div class="inner-container">
-			<ul class="slideshow">
-				<li class="slide">
-					<div class="image-container">
-						<img src="" alt="">
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum fuga, exercitationem provident tempora nesciunt.</p>
-				</li>
-				<li class="slide">
-					<div class="image-container">
-						<img src="" alt="">
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum fuga, exercitationem provident tempora nesciunt.</p>
-				</li>
-			</ul>
+			<div class="containing-column">
+				<ul class="slideshow">
+					<li class="slide">
+						<div class="circle circle__white">
+							<div class="circle circle__container">
+								<img src="img/testomonial/djforella.jpg" alt="Branding, Website Design, Website Devlopment - Justin Forella, DJForella">
+							</div>
+						</div>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum fuga, exercitationem provident tempora nesciunt.""
+						</p>
+						<p><span class="person">Justin Forella</span><br><a href="http://djforella.com">djforella.com</a></p>
+					</li>
+					<li class="slide">
+						<div class="circle circle__white">
+							<div class="circle circle__container">
+								<img src="img/testomonial/bravegirl.jpg" alt="Website Development - Emily Watz, Brave Girl Blog">
+							</div>
+						</div>
+						<p>"I often refer to the guys at Nobol as magicians because that's exactly how it feels to work with them. They took my blog design mockups &amp; made my vision come to life. Their keen eye for design, meticulous forethought &amp; intelligent strategies make them the kind of duo you can trust &amp; have fun with. In a community where templates are standard, Nobol gave me the freedom to express my individuality in a seamless &amp; customizable way."</p>
+						<p><span class="person">Emily Watz</span><br><a href="http://bravegirlspirit.com">bravegirlspirit.com</a></p>
+					</li>
+				</ul>
+			</div>
+			<div class="containing-column pager-column">
+				<div id="pager"></div>
+			</div>
 		</div>
 	</section>
 	<section class="contact">
@@ -144,7 +156,9 @@
 	</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/form-validator/jquery.form-validator.min.js"></script>
 	<script src="js/fancySelect.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/function.js"></script>
 </body>
 </html>

@@ -609,6 +609,23 @@ nav .icon-contact {
   background: #f7c073;
 }
 
+.circle__white {
+  background: #fff;
+}
+
+.circle__container {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  padding: 72px;
+  overflow: hidden;
+}
+.circle__container img {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+}
+
 .services {
   padding-bottom: 100px;
 }
@@ -635,6 +652,53 @@ nav .icon-contact {
   -o-background-size: cover;
   background-size: cover;
   height: 600px;
+  padding-top: 100px;
+}
+
+.slideshow {
+  width: 500px !important;
+  margin: 0 auto;
+}
+.slideshow .slide {
+  width: 500px !important;
+}
+.slideshow p {
+  font-style: italic;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.slideshow p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.pager-column {
+  position: absolute;
+  bottom: -113px;
+}
+
+#pager {
+  text-align: center;
+}
+#pager a {
+  text-indent: -9999em;
+  border-radius: 40px;
+  width: 2px;
+  height: 2px;
+  padding: 5px;
+  border: 1px solid #fff;
+  background: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+#pager .activeSlide {
+  background: #fff;
+}
+
+.person {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .contact {

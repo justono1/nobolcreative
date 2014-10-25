@@ -77,6 +77,21 @@ nav {
 .circle__orange {
 	background: $orange;
 }
+.circle__white {
+	background: $white;
+}
+.circle__container {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	padding: 72px;
+	overflow: hidden;
+	img {
+		position: absolute;
+		top: -10px;
+		left: -15px;
+	}
+}
 .services {
 	padding-bottom: 100px;
 	p {
@@ -100,6 +115,49 @@ nav {
 //TESTOMONIAL STYLES
 .testomonials {
 	@include bgcover(testomonials, 600px);
+	padding-top: 100px;
+}
+.slideshow {
+	width: 500px !important;
+	margin: 0 auto;
+	.slide {
+		width: 500px !important;
+	}
+	p {
+		font-style: italic;
+		margin-top: 20px;
+		color: $white;
+		text-align: center;
+		a {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+}
+.pager-column {
+	position: absolute;
+	bottom: -113px;
+}
+#pager {
+	text-align: center;
+	a {
+		text-indent: -9999em;
+		border-radius: 40px;
+		width: 2px;
+		height: 2px;
+		padding: 5px;
+		border: 1px solid $white;
+		background: none;
+		display: inline-block;
+		margin-right: 5px;
+	}
+	.activeSlide {
+		background: $white;
+	}
+}
+.person {
+	font-weight: $bold;
+	font-style: normal;
 }
 
 //CONTACT STYLES
