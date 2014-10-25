@@ -1,0 +1,66 @@
+@mixin trans($time, $motion) {
+	-webkit-transition: $time $motion;
+	-moz-transition: $time $motion;
+	-ms-transition: $time $motion;
+	-o-transition: $time $motion;
+	transition: $time $motion;
+}
+@mixin trans-delay($time) {
+	-webkit-transition-delay: $time;
+	-moz-transition-delay: $time;
+	-ms-transition-delay: $time;
+	-o-transition-delay: $time;
+	transition-delay: $time;
+}
+
+@mixin rotate($deg) {
+	-webkit-transform: rotate(#{$deg}deg);
+	-moz-transform: rotate(#{$deg}deg);
+	-o-transform: rotate(#{$deg}deg);
+	-ms-transform: rotate(#{$deg}deg);
+	transform: rotate(#{$deg}deg);
+}
+
+@mixin translate($lvl) {
+	-webkit-transform:translateZ($lvl);
+  -moz-transform:translateZ($lvl);
+  -o-transform:translateZ($lvl);
+  transform:translateZ($lvl);
+}
+
+@mixin transform-scale($num) {
+	-webkit-transform: scale(#{$num});
+	-moz-transform: scale(#{$num});
+  -o-transform: scale(#{$num});
+  -ms-transform: scale(#{$num});
+  transform: scale(#{$num}); 
+}
+
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin slidecover($imgurl) {
+	background: url('../img/#{$imgurl}.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin bgcover($imgurl, $height) {
+	background: url('../img/#{$imgurl}.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: $height;
+}
+
+@mixin boxshad($horz, $vert, $blur, $spread, $color) {
+	-moz-box-shadow:    $horz $vert $blur $spread $color;
+  -webkit-box-shadow: $horz $vert $blur $spread $color;
+  box-shadow:         $horz $vert $blur $spread $color;
+}

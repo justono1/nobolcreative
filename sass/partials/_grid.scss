@@ -1,0 +1,34 @@
+$mobile: new-breakpoint(max-width 480px 4);
+
+section, header, nav, footer {
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+section {
+	@include outer-container(100%);
+}
+.inner-container {
+	position: relative;
+	z-index: 2;
+	@include outer-container(994px);
+	@include media($mobile) {
+		@include outer-container(100%);
+	}
+}
+.three-column {
+	@include span-columns(4);
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+}
+.three-column_centered {
+	@include span-columns(4);
+	@include shift(4);
+}
+.two-column_inner {
+	@include span-columns(2 of 4);
+}
+.row {
+	@include row();
+}

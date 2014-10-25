@@ -1,0 +1,45 @@
+%btn {
+	outline: none;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	display: block;
+	border-radius: 4px;
+	cursor: pointer;
+	@include transition(all .3s linear);
+	@include border-box();
+	font-size: $normalType;
+}
+
+.btn {
+	@extend %btn;
+}
+
+@mixin btn-solid($fontWeight, $fontColor, $bg) {
+	font-weight: $fontWeight;
+	color: $fontColor;
+	background: $bg;
+	border: 1px solid $bg;
+	&:hover {
+		background: lighten($bg, 5%);
+	}
+}
+
+@mixin btn-outline($fontWeight, $fontColor, $borderWeight, $borderColor) {
+	font-weight: $fontWeight;
+	color: $fontColor;
+	background: none;
+	border: $borderWeight solid $borderColor;
+	&:hover {
+		color: lighten($fontColor, 5%);
+		border-color: lighten($borderColor, 5%);
+	}
+}
+
+.btn-orange {
+	@include btn-solid($bold, $white, $orange);
+}
+.btn-outline {
+	@include btn-outline($light, $white, 1px, $white);
+}
+
+

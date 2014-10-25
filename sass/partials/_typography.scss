@@ -1,0 +1,47 @@
+//em math
+$xlargeType: #{(50/16)}em;
+$largeType: #{(30/16)}em;
+$mediumType: #{(24/16)}em;
+$normalType: #{(16/16)}em;
+
+$primaryType: #{(14/16)}em;
+
+html  {
+	font-size: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+$light: 300;
+$medium: 500;
+$bold: 700;
+
+h1 {
+	color: $white;
+	font-size: $xlargeType;
+	font-weight: $light;
+	text-align: center;
+}
+h2 {
+	color: $darkGray;
+	font-size: $largeType;
+	font-weight: $light;
+}
+h2.divide {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $lightGray;
+}
+h3 {
+	color: $blue;
+	text-align: center;
+	font-size: $mediumType;
+	font-weight: $medium;
+	margin-bottom: 20px;
+}
+p {
+	color: $darkGray;
+	font-size: $primaryType;
+	font-weight: $medium;
+	line-height: 20px;
+}

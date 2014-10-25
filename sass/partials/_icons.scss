@@ -1,0 +1,77 @@
+//Icon sizes
+$size1: #{(24/16)}em;
+$size2: #{(15/16)}em;
+
+@font-face {
+	font-family: 'nobol-icon';
+	src:url('fonts/nobol.eot?6gk9qb');
+	src:url('fonts/nobol.eot?#iefix6gk9qb') format('embedded-opentype'),
+		url('fonts/nobol.woff?6gk9qb') format('woff'),
+		url('fonts/nobol.ttf?6gk9qb') format('truetype'),
+		url('fonts/nobol.svg?6gk9qb#nobol') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin icon($iconName, $icon, $size, $color) {
+	.icon-#{$iconName}:before {
+		content: $icon;
+		font-size: $size;
+		color: $color;
+		font-style: normal;
+	}
+	.icon-#{$iconName}:before:hover {
+		color: lighten($color, 5%);
+	}
+}
+
+.icon {
+	font-family: 'nobol-icon';
+}
+
+@include icon(logo, "\e609", 3.5em, $white);
+@include icon(contact, "\e603", $size1, $white);
+@include icon(dwnArrowWhite, "\e604", $size1, $white);
+@include icon(dwnArrowGray, "\e604", $size1, $lightGray);
+@include icon(twitter, "\e600", $size2, $white);
+@include icon(facebook, "\e601", $size2, $white);
+@include icon(instagram, "\e602", $size2, $white);
+@include icon(googlePlus, "\e60a", $size2, $white);
+@include icon(logoBug, "\e608", $size1, $white);
+
+.icon-dwnArrowWhite {
+	position: absolute;
+	bottom: 30px;
+	left: 49%;
+	z-index: 1;
+}
+
+.computer-svg, .browser-svg, .identity-svg {
+	position: absolute;
+}
+.computer-svg {
+	top: 40px;
+	left: 30px;
+	height: 80px;
+	width: 92px;
+}
+.browser-svg {
+	top: 37px;
+	left: 33px;
+	height: 80px;
+	width: 83px;
+}
+.identity-svg {
+	top: 48px;
+	left: 31px;
+	width: 90px;
+	height: 56px;
+}
+
+
+
+
+
+
+
+

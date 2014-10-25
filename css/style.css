@@ -1,0 +1,583 @@
+@charset "UTF-8";
+/* Neat 1.7.0.pre
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/**
+ * Returns a media context (media query / grid context) that can be stored in a variable and passed to `media()` as a single-keyword argument. Media contexts defined using `new-breakpoint` are used by the visual grid, as long as they are defined before importing Neat.
+ *
+ * @param {List} $query
+ *   - A list of media query features and values. Each `$feature` should have a corresponding `$value`. If there is only a single `$value` in `$query`, `$default-feature` is going to be used. The number of total columns in the grid can be set by passing `$columns` at the end of the list (overrides `$total-columns`). For a list of valid values for `$feature`, click [here](http://www.w3.org/TR/css3-mediaqueries/#media1).
+ *
+ * @param {Number (unitless)} $total-columns ($grid-columns)
+ *   - Number of columns to use in the new grid context. Can be set as a shorthand in the first parameter.
+ *
+ * @example scss - Usage
+ *   $mobile: new-breakpoint(max-width 480px 4);
+ *
+ *   .element {
+ *     @include media($mobile) {
+ *       @include span-columns(4);
+ *     }
+ *   }
+ *
+ * @example css - CSS Output
+ *   @media screen and (max-width: 480px) {
+ *     .element {
+ *       display: block;
+ *       float: left;
+ *       margin-right: 7.42297%;
+ *       width: 100%;
+ *     }
+ *     .element:last-child {
+ *       margin-right: 0;
+ *     }
+ *   }
+ */
+/**
+ * Sets the relative width of a single grid column. The unit used should be the same one used to define `$gutter`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with a `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the relative width of a single grid gutter. The unit used should be the same one used to define `$column`. To learn more about golden-ratio() see [Bourbon docs](http://bourbon.io/docs/#golden-ratio). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * Sets the total number of columns in the grid. Its value can be overridden inside a media query using the `media()` mixin. Set with the `!global` flag.
+ *
+ * @type Number (Unitless)
+ */
+/**
+ * Sets the max-width property of the element that includes `outer-container()`. To learn more about `em()` see [Bourbon docs](http://bourbon.io/docs/#px-to-em). Set with the `!global` flag.
+ *
+ * @type Number (Unit)
+ */
+/**
+ * When set to true, it sets the box-sizing property of all elements to `border-box`. Set with a `!global` flag.
+ *
+ * @type Bool
+ *
+ * @example css - CSS Output
+ *   * {
+ *     -webkit-box-sizing: border-box;
+ *     -moz-box-sizing: border-box;
+ *     box-sizing: border-box;
+ *   }
+ */
+/**
+ * Sets the default [media feature](http://www.w3.org/TR/css3-mediaqueries/#media) that `media()` and `new-breakpoint()` revert to when only a breakpoint value is passed. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the default layout direction of the grid. Can be `LTR` or `RTL`. Set with a `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Displays the visual grid when set to true. The overlaid grid may be few pixels off depending on the browser's rendering engine and pixel rounding algorithm. Set with the `!global` flag.
+ *
+ * @type Bool
+ */
+/**
+ * Sets the visual grid color. Set with `!global` flag.
+ *
+ * @type Color
+ */
+/**
+ * Sets the `z-index` property of the visual grid. Can be `back` (behind content) or `front` (in front of content). Set with `!global` flag.
+ *
+ * @type String
+ */
+/**
+ * Sets the opacity property of the visual grid. Set with `!global` flag.
+ *
+ * @type Number (unitless)
+ */
+/**
+ * Disable all deprecation warnings. Defaults to `false`. Set with a `!global` flag.
+ *
+ * @type Bool
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/**
+ * Resets the active display property to `block`. Particularly useful when changing the display property in a single row.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row(table);
+ *     // Context changed to table display
+ *   }
+ *
+ *   @include reset-display;
+ *   // Context is reset to block display
+ */
+/**
+ * Resets the active layout direction to the default value set in `$default-layout-direction`. Particularly useful when changing the layout direction in a single row.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row($direction: RTL);
+ *     // Context changed to right-to-left
+ *   }
+ *
+ *   @include reset-layout-direction;
+ *   // Context is reset to left-to-right
+ */
+/**
+ * Resets both the active layout direction and the active display property.
+ *
+ * @example scss - Usage
+ *   .element {
+ *     @include row(table, RTL);
+ *     // Context changed to table table and right-to-left
+ *   }
+ *
+ *   @include reset-all;
+ *   // Context is reset to block display and left-to-right
+ */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: none;
+}
+
+section, header, nav, footer {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inner-container {
+  position: relative;
+  z-index: 2;
+  max-width: 994px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inner-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 480px) {
+  .inner-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inner-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.three-column {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+}
+.three-column:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .three-column {
+    float: left;
+    display: block;
+    margin-right: 7.4229703521%;
+    width: 100%;
+  }
+  .three-column:last-child {
+    margin-right: 0;
+  }
+}
+
+.three-column_centered {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  margin-left: 34.1192171993%;
+}
+.three-column_centered:last-child {
+  margin-right: 0;
+}
+
+.two-column_inner {
+  float: left;
+  display: block;
+  margin-right: 7.4229703521%;
+  width: 46.288514824%;
+}
+.two-column_inner:last-child {
+  margin-right: 0;
+}
+
+.row {
+  display: block;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.125em;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  color: #2e3137;
+  font-size: 1.875em;
+  font-weight: 300;
+}
+
+h2.divide {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ededed;
+}
+
+h3 {
+  color: #007b91;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #2e3137;
+  font-size: 0.875em;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@font-face {
+  font-family: 'nobol-icon';
+  src: url("fonts/nobol.eot?6gk9qb");
+  src: url("fonts/nobol.eot?#iefix6gk9qb") format("embedded-opentype"), url("fonts/nobol.woff?6gk9qb") format("woff"), url("fonts/nobol.ttf?6gk9qb") format("truetype"), url("fonts/nobol.svg?6gk9qb#nobol") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: 'nobol-icon';
+}
+
+.icon-logo:before {
+  content: "";
+  font-size: 3.5em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-logo:before:hover {
+  color: white;
+}
+
+.icon-contact:before {
+  content: "";
+  font-size: 1.5em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-contact:before:hover {
+  color: white;
+}
+
+.icon-dwnArrowWhite:before {
+  content: "";
+  font-size: 1.5em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-dwnArrowWhite:before:hover {
+  color: white;
+}
+
+.icon-dwnArrowGray:before {
+  content: "";
+  font-size: 1.5em;
+  color: #ededed;
+  font-style: normal;
+}
+
+.icon-dwnArrowGray:before:hover {
+  color: #fafafa;
+}
+
+.icon-twitter:before {
+  content: "";
+  font-size: 0.9375em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-twitter:before:hover {
+  color: white;
+}
+
+.icon-facebook:before {
+  content: "";
+  font-size: 0.9375em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-facebook:before:hover {
+  color: white;
+}
+
+.icon-instagram:before {
+  content: "";
+  font-size: 0.9375em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-instagram:before:hover {
+  color: white;
+}
+
+.icon-googlePlus:before {
+  content: "";
+  font-size: 0.9375em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-googlePlus:before:hover {
+  color: white;
+}
+
+.icon-logoBug:before {
+  content: "";
+  font-size: 1.5em;
+  color: #fff;
+  font-style: normal;
+}
+
+.icon-logoBug:before:hover {
+  color: white;
+}
+
+.icon-dwnArrowWhite {
+  position: absolute;
+  bottom: 30px;
+  left: 49%;
+  z-index: 1;
+}
+
+.computer-svg, .browser-svg, .identity-svg {
+  position: absolute;
+}
+
+.computer-svg {
+  top: 40px;
+  left: 30px;
+  height: 80px;
+  width: 92px;
+}
+
+.browser-svg {
+  top: 37px;
+  left: 33px;
+  height: 80px;
+  width: 83px;
+}
+
+.identity-svg {
+  top: 48px;
+  left: 31px;
+  width: 90px;
+  height: 56px;
+}
+
+.btn {
+  outline: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.btn-orange {
+  font-weight: 700;
+  color: #fff;
+  background: #f7c073;
+  border: 1px solid #f7c073;
+}
+.btn-orange:hover {
+  background: #f8cb8b;
+}
+
+.btn-outline {
+  font-weight: 300;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+}
+.btn-outline:hover {
+  color: white;
+  border-color: white;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  background: url("../img/header.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+header h1 {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+nav {
+  position: relative;
+  padding-top: 40px;
+}
+nav .icon-contact {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.bgoverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.bgoverlay__header {
+  background: rgba(46, 49, 55, 0.8);
+}
+
+.bgoverlay__testomonials {
+  background: rgba(247, 192, 115, 0.8);
+}
+
+.bgoverlay__footer {
+  background: rgba(46, 49, 55, 0.9);
+}
+
+.circle {
+  margin: 0 auto;
+  position: relative;
+  border-radius: 100px;
+  height: 2px;
+  width: 2px;
+  padding: 75px;
+}
+
+.circle__blue {
+  background: #69B0BE;
+}
+
+.circle__orange {
+  background: #f7c073;
+}
+
+.services {
+  padding-bottom: 100px;
+}
+.services p {
+  text-align: center;
+}
+.services .three-column {
+  margin-top: 80px;
+}
+.services h3 {
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+.quote {
+  background: #2e3137;
+  padding: 90px 0px;
+}
+
+.testomonials {
+  background: url("../img/testomonials.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+}
+
+footer {
+  background: url("../img/footer.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 89.9 57.7" enable-background="new 0 0 89.9 57.7" xml:space="preserve">
+<g id="Card_2_" opacity="0.2">
+	<g>
+		<path fill="#010101" d="M84.1,2H7.9C4.6,2,2,4.6,2,7.9v44c0,3.2,2.6,5.9,5.9,5.9h76.2c3.2,0,5.9-2.6,5.9-5.9v-44
+			C89.9,4.6,87.3,2,84.1,2z"/>
+	</g>
+</g>
+<g id="Card">
+	<g>
+		<path fill="#FFFFFF" d="M82.1,0H5.9C2.6,0,0,2.6,0,5.9v44c0,3.2,2.6,5.9,5.9,5.9h76.2c3.2,0,5.9-2.6,5.9-5.9v-44
+			C87.9,2.6,85.3,0,82.1,0z"/>
+	</g>
+</g>
+<g id="Details">
+	<g>
+		<path fill="#D5D6D7" d="M64.5,35.2H46.9v2.9h17.6V35.2z M8.8,46.9H41V8.8H8.8V46.9z M46.9,44h32.2V41H46.9V44z M67.4,17.6H46.9
+			v2.9h20.5V17.6z M46.9,26.4h32.2v-2.9H46.9V26.4z M46.9,8.8v5.9h32.2V8.8H46.9z M46.9,32.2h32.2v-2.9H46.9V32.2z M70.3,38.1h8.8
+			v-2.9h-8.8V38.1z"/>
+	</g>
+</g>
+<g id="Dude">
+	<g>
+		<path fill="#6D6F73" d="M28.9,35.9h-1.3l-0.1-1.1c1.8-1.6,3.6-4.5,3.6-5.8v-1.2c0,0,1.2,0,1.2-1.8c0-1.7-1.2-1.7-1.2-1.7V22
+			c0-3.5-2.3-5.7-5.7-5.7h-1.1c-3.5,0-5.7,2.2-5.7,5.7v2.3c0,0-1.2,0-1.2,1.8c0,1.7,1.2,1.7,1.2,1.7V29c0,1.3,1.9,4.2,3.7,5.8
+			l-0.1,1.1h-1.3c-3.5,0-9.2,2.3-9.2,4.6v3.5h26.4v-3.5C38.1,38.2,32.4,35.9,28.9,35.9z"/>
+	</g>
+</g>
+</svg>
