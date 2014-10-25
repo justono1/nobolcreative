@@ -14,6 +14,13 @@ $(document).ready(function() {
     showHelpOnFocus : false,
     modules : 'file'
   });
+
+  $(".top-container").css("top", $(window).height());
+
+  $(window).resize(function() {
+  	$(".top-container").css("top", $(window).height());
+  });
 	
+	var s = skrollr.init();
 
 });
