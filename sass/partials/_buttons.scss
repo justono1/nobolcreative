@@ -1,12 +1,13 @@
 %btn {
 	outline: none;
-	padding: 10px 20px 10px 20px;
+	padding: 15px 35px 15px 35px;
 	text-align: center;
 	display: block;
 	border-radius: 4px;
 	cursor: pointer;
+	width: 175px;
 	@include transition(all .3s linear);
-	@include border-box();
+	//@include border-box();
 	font-size: $normalType;
 	-webkit-appearance: none;
 }
@@ -44,7 +45,6 @@
 }
 .btn-blue {
 	@include btn-solid($light, $white, $blue);
-	width: 100%;
 }
 
 

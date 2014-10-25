@@ -228,20 +228,10 @@ section:after {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 31.7615656014%;
-  margin-left: 34.1192171993%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
 }
 .three-column_centered:last-child {
-  margin-right: 0;
-}
-
-.two-column_inner {
-  float: left;
-  display: block;
-  margin-right: 7.4229703521%;
-  width: 46.288514824%;
-}
-.two-column_inner:last-child {
   margin-right: 0;
 }
 
@@ -263,17 +253,6 @@ section:after {
   width: 48.2106681966%;
 }
 .two-column:last-child {
-  margin-right: 0;
-}
-
-.two-column__right {
-  float: left;
-  display: block;
-  margin-right: 3.5786636068%;
-  width: 22.3160022949%;
-  margin-left: 77.6839977051%;
-}
-.two-column__right:last-child {
   margin-right: 0;
 }
 
@@ -333,7 +312,7 @@ p {
   color: #2e3137;
   font-size: 0.875em;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 23px;
 }
 
 @font-face {
@@ -487,17 +466,15 @@ p {
 
 .btn {
   outline: none;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 35px 15px 35px;
   text-align: center;
   display: block;
   border-radius: 4px;
   cursor: pointer;
+  width: 175px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-size: 1em;
   -webkit-appearance: none;
 }
@@ -528,7 +505,6 @@ p {
   color: #fff;
   background: #007b91;
   border: 1px solid #007b91;
-  width: 100%;
 }
 .btn-blue:hover {
   background: #0091ab;
@@ -590,6 +566,19 @@ nav .icon-contact {
 
 .bgoverlay__footer {
   background: rgba(46, 49, 55, 0.9);
+}
+
+.header__buttons--centered {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.header__buttons--centered .btn {
+  display: inline-block;
+  vertical-align: top;
+}
+.header__buttons--centered .btn:first-child {
+  margin-right: 15px;
 }
 
 .circle {
@@ -705,7 +694,7 @@ nav .icon-contact {
   padding-bottom: 35px;
 }
 
-input, textarea, .select-container {
+input, textarea {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -722,6 +711,14 @@ input, textarea, .select-container {
   font-weight: 500;
   -webkit-appearance: none;
 }
+input:focus, textarea:focus {
+  border-color: #007b91;
+  -webkit-appearance: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
 
 textarea {
   resize: none;
@@ -731,6 +728,16 @@ textarea {
 
 form {
   margin-top: 45px;
+}
+
+.form__button--right {
+  position: relative;
+  width: 100%;
+  margin-bottom: 55px;
+}
+.form__button--right .btn {
+  position: absolute;
+  right: 0;
 }
 
 footer {
