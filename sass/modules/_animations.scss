@@ -89,22 +89,22 @@
 }
 
 .service1 {
-  @include trans(.2s, ease-in-out);
+  @include trans(.5s, ease-in-out);
   @include transform-scale(0);
   @include trans-delay(.5s);
 }
 .service1 img, .service2 {
-  @include trans(.2s, ease-in-out);
+  @include trans(.5s, ease-in-out);
   @include transform-scale(0);
   @include trans-delay(.6s);
 }
 .service2 img, .service3 {
-  @include trans(.2s, ease-in-out);
+  @include trans(.5s, ease-in-out);
   @include transform-scale(0);
   @include trans-delay(.7s);
 }
 .service3 img {
-  @include trans(.2s, ease-in-out);
+  @include trans(.5s, ease-in-out);
   @include transform-scale(0);
   @include trans-delay(.8s);
 }
