@@ -91,22 +91,22 @@
 .service1 {
   @include trans(.5s, ease-in-out);
   @include transform-scale(0);
-  @include trans-delay(.5s);
+  @include trans-delay(.3s);
 }
 .service1 img, .service2 {
   @include trans(.5s, ease-in-out);
   @include transform-scale(0);
-  @include trans-delay(.6s);
+  @include trans-delay(.4s);
 }
 .service2 img, .service3 {
   @include trans(.5s, ease-in-out);
   @include transform-scale(0);
-  @include trans-delay(.7s);
+  @include trans-delay(.5s);
 }
 .service3 img {
   @include trans(.5s, ease-in-out);
   @include transform-scale(0);
-  @include trans-delay(.8s);
+  @include trans-delay(.6s);
 }
 .skrollable-after {
   .service1, .service2, .service3, .service1 img, .service2 img, .service3 img {

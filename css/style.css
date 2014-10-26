@@ -1019,6 +1019,42 @@ div.fancy-select ul.options li.hover {
   -o-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.service1 img, .service2 {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.service2 img, .service3 {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   -webkit-transition-delay: 0.5s;
   -moz-transition-delay: 0.5s;
   -ms-transition-delay: 0.5s;
@@ -1026,7 +1062,7 @@ div.fancy-select ul.options li.hover {
   transition-delay: 0.5s;
 }
 
-.service1 img, .service2 {
+.service3 img {
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
@@ -1042,42 +1078,6 @@ div.fancy-select ul.options li.hover {
   -ms-transition-delay: 0.6s;
   -o-transition-delay: 0.6s;
   transition-delay: 0.6s;
-}
-
-.service2 img, .service3 {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-delay: 0.7s;
-  -moz-transition-delay: 0.7s;
-  -ms-transition-delay: 0.7s;
-  -o-transition-delay: 0.7s;
-  transition-delay: 0.7s;
-}
-
-.service3 img {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -o-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-delay: 0.8s;
-  -moz-transition-delay: 0.8s;
-  -ms-transition-delay: 0.8s;
-  -o-transition-delay: 0.8s;
-  transition-delay: 0.8s;
 }
 
 .skrollable-after .service1, .skrollable-after .service2, .skrollable-after .service3, .skrollable-after .service1 img, .skrollable-after .service2 img, .skrollable-after .service3 img {
