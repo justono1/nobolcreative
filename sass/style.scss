@@ -27,6 +27,21 @@ html {
 body {
 	height: 100% !important;
 }
+//NOTIFICATION STYLES
+.notification {
+	width: 100%;
+	padding: 15px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+	p {
+		color: $white;
+		font-weight: $bold;
+		text-align: center;
+	}
+}
 
 //HEADER STYLES
 header {
@@ -219,7 +234,7 @@ input, textarea {
 	@include border-box();
 	border-radius: 4px;
 	border: 1px solid $lightGray;
-	color: $darkGray;
+	color: darken($gray,45%);
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 15px;
@@ -250,6 +265,9 @@ form {
 	.btn {
 		position: absolute;
 		right: 0;
+		@include media($tablet) {
+			right: 50px;
+		}
 	}
 }
 
@@ -263,11 +281,15 @@ footer {
 		display: inline-block;
 		margin-top: 180px;
 		margin-bottom: 172px;
+		@include media($tablet) {
+			margin-bottom: 150px;
+		}
 	}
 	p {
 		font-weight: $light;
 		text-align: center;
 		color: $white;
+		display: block;
 		a {
 			color: $white;
 			text-decoration: none;

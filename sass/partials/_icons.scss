@@ -28,6 +28,7 @@ $size3: #{(368/16)}em;
 
 .icon {
 	font-family: 'nobol-icon';
+	cursor: pointer;
 }
 
 @include icon(logo, "\e609", 3.5em, $white);
@@ -51,6 +52,9 @@ $size3: #{(368/16)}em;
 	left: 29.5%;
 	top: 28px;
 	z-index: 0;
+	@include media($tablet) {
+		left: 22.5%;
+	}
 }
 
 .computer-svg, .browser-svg, .identity-svg {

@@ -1,4 +1,5 @@
 $mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 768px 12);
 
 section, header, nav, footer {
 	display: block;
@@ -12,6 +13,9 @@ section {
 	position: relative;
 	z-index: 2;
 	@include outer-container(994px);
+	@include media($tablet) {
+		@include outer-container(748px);
+	}
 	@include media($mobile) {
 		@include outer-container(100%);
 	}
@@ -29,12 +33,30 @@ section {
 .containing-column {
 	@include span-columns(8);
 	@include shift(2);
+	@include media($tablet) {
+		@include span-columns(12);
+		@include shift(0);
+	}
 }
 .two-column {
 	@include span-columns(4 of 8);
+	@include media($tablet) {
+		@include span-columns(6 of 12);
+		&:first-child {
+			padding-left: 50px;
+		}
+		&:last-child {
+			padding-right: 50px;
+		}
+	}
 }
 .message-column {
 	@include span-columns(8 of 8);
+	@include media($tablet) {
+		@include span-columns(12 of 12);
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 .row {
 	@include row();
