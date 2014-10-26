@@ -178,8 +178,8 @@ nav {
 	}
 	.circle__small {
 		position: absolute;
-		top: 51%;
-		left: 44%;
+		top: 50%;
+		left: 50%;
 		background: $white;
 		width: 0px;
 		height: 0px;
@@ -189,6 +189,7 @@ nav {
     -moz-animation: empty .8s;
     -webkit-animation: empty .8s;
     -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
 	}
 	.activeSlide {
 		.circle__small {
@@ -196,40 +197,12 @@ nav {
 	    -moz-animation: fill .8s;
 	    -webkit-animation: fill .8s;
 	    -webkit-animation-fill-mode: forwards;
+	    animation-fill-mode: forwards;
 	    -webkit-transition-timing-function: ease-in;
+	    transition-timing-function: ease-in;
 
 		}
 	}
-}
-
-@-webkit-keyframes fill /* Safari and Chrome */
-{
-  from {
-  	height:0px;
-  	width:0px;
-  }
-  to {
-  	height: 2px;
-  	width: 2px;
-  	padding: 6px;
-  	top: 0%;
-  	left: 0%;
-  }
-}
-
-@-webkit-keyframes empty /* Safari and Chrome */
-{	
-	from {
-		height: 2px; 
-		width: 2px; 
-		padding: 6px; 
-		top: 0%; 
-		left: 0%;
-	}
-  to {
-  	height:0px;
-  	width:0px;
-  }
 }
 
 .person {
@@ -442,5 +415,5 @@ div.fancy-select ul.options li.hover {
 }
 
 
-//@import "modules/animations";
+@import "modules/animations";
 

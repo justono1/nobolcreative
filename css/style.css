@@ -695,8 +695,8 @@ nav .icon-contact {
 }
 #pager .circle__small {
   position: absolute;
-  top: 51%;
-  left: 44%;
+  top: 50%;
+  left: 50%;
   background: #fff;
   width: 0px;
   height: 0px;
@@ -706,41 +706,18 @@ nav .icon-contact {
   -moz-animation: empty .8s;
   -webkit-animation: empty .8s;
   -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 #pager .activeSlide .circle__small {
   animation: fill .8s;
   -moz-animation: fill .8s;
   -webkit-animation: fill .8s;
   -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
-@-webkit-keyframes fill /* Safari and Chrome */ {
-  from {
-    height: 0px;
-    width: 0px;
-  }
-  to {
-    height: 2px;
-    width: 2px;
-    padding: 6px;
-    top: 0%;
-    left: 0%;
-  }
-}
-@-webkit-keyframes empty /* Safari and Chrome */ {
-  from {
-    height: 2px;
-    width: 2px;
-    padding: 6px;
-    top: 0%;
-    left: 0%;
-  }
-  to {
-    height: 0px;
-    width: 0px;
-  }
-}
 .person {
   font-weight: 700;
   font-style: normal;
@@ -951,4 +928,162 @@ div.fancy-select ul.options li.selected {
 div.fancy-select ul.options li.hover {
   color: #fff;
   background: #d0d0d0;
+}
+
+@-webkit-keyframes fill {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+}
+@-webkit-keyframes empty {
+  from {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+  to {
+    height: 0px;
+    width: 0px;
+  }
+}
+@-moz-keyframes fill {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+}
+@-moz-keyframes empty {
+  from {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+  to {
+    height: 0px;
+    width: 0px;
+  }
+}
+@keyframes fill {
+  from {
+    height: 0px;
+    width: 0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+}
+@keyframes empty {
+  from {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+  to {
+    height: 0px;
+    width: 0px;
+  }
+}
+.service1 {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.service1 img, .service2 {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.service2 img, .service3 {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  -ms-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+
+.service3 img {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-delay: 0.8s;
+  -moz-transition-delay: 0.8s;
+  -ms-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+
+.skrollable-after .service1, .skrollable-after .service2, .skrollable-after .service3, .skrollable-after .service1 img, .skrollable-after .service2 img, .skrollable-after .service3 img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }

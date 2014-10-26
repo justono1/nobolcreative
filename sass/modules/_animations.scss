@@ -1,0 +1,115 @@
+@-webkit-keyframes fill
+{
+  from {
+  	height:0px;
+  	width:0px;
+  }
+  to {
+  	height: 2px;
+  	width: 2px;
+  	padding: 6px;
+  	top: 0%;
+  	left: 2%;
+  }
+}
+
+@-webkit-keyframes empty
+{	
+	from {
+		height: 2px; 
+		width: 2px; 
+		padding: 6px; 
+		top: 0%; 
+		left: 2%;
+	}
+  to {
+  	height:0px;
+  	width:0px;
+  }
+}
+
+@-moz-keyframes fill
+{
+  from {
+    height:0px;
+    width:0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+}
+
+@-moz-keyframes empty
+{ 
+  from {
+    height: 2px; 
+    width: 2px; 
+    padding: 6px; 
+    top: 0%; 
+    left: 2%;
+  }
+  to {
+    height:0px;
+    width:0px;
+  }
+}
+
+@keyframes fill
+{
+  from {
+    height:0px;
+    width:0px;
+  }
+  to {
+    height: 2px;
+    width: 2px;
+    padding: 6px;
+    top: 0%;
+    left: 2%;
+  }
+}
+
+@keyframes empty
+{ 
+  from {
+    height: 2px; 
+    width: 2px; 
+    padding: 6px; 
+    top: 0%; 
+    left: 2%;
+  }
+  to {
+    height:0px;
+    width:0px;
+  }
+}
+
+.service1 {
+  @include trans(.2s, ease-in-out);
+  @include transform-scale(0);
+  @include trans-delay(.5s);
+}
+.service1 img, .service2 {
+  @include trans(.2s, ease-in-out);
+  @include transform-scale(0);
+  @include trans-delay(.6s);
+}
+.service2 img, .service3 {
+  @include trans(.2s, ease-in-out);
+  @include transform-scale(0);
+  @include trans-delay(.7s);
+}
+.service3 img {
+  @include trans(.2s, ease-in-out);
+  @include transform-scale(0);
+  @include trans-delay(.8s);
+}
+.skrollable-after {
+  .service1, .service2, .service3, .service1 img, .service2 img, .service3 img {
+    @include transform-scale(1);
+  }
+}
