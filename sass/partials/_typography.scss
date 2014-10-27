@@ -1,6 +1,7 @@
 //em math
 $xlargeType: #{(50/16)}em;
 $largeType: #{(30/16)}em;
+$mobileXL: #{(28/16)}em;
 $mediumType: #{(24/16)}em;
 $normalType: #{(16/16)}em;
 
@@ -20,11 +21,17 @@ h1 {
 	font-size: $xlargeType;
 	font-weight: $light;
 	text-align: center;
+	@include media($mobile) {
+		font-size: $mobileXL;
+	}
 }
 h2 {
 	color: $darkGray;
 	font-size: $largeType;
 	font-weight: $light;
+	@include media($mobile) {
+		font-size: $mediumType;
+	}
 }
 h2.divide {
 	text-align: center;

@@ -46,6 +46,9 @@ $size3: #{(368/16)}em;
 	bottom: 30px;
 	left: 49%;
 	z-index: 1;
+	@include media($mobile) {
+		left: 47%;
+	}
 }
 .icon-logoBug {
 	position: absolute;
@@ -55,6 +58,9 @@ $size3: #{(368/16)}em;
 	@include media($tablet) {
 		left: 22.5%;
 	}
+	@include media($mobile) {
+   	left: -14.5%;
+  }
 }
 
 .computer-svg, .browser-svg, .identity-svg {

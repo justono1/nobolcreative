@@ -180,7 +180,7 @@ section:after {
 
 .inner-container {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   max-width: 994px;
   margin-left: auto;
   margin-right: auto;
@@ -207,6 +207,7 @@ section:after {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0px 10px 0px 10px;
   }
   .inner-container:after {
     content: "";
@@ -230,6 +231,8 @@ section:after {
     display: block;
     margin-right: 7.4229703521%;
     width: 100%;
+    display: block;
+    float: none;
   }
   .three-column:last-child {
     margin-right: 0;
@@ -245,6 +248,20 @@ section:after {
 }
 .three-column_centered:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .three-column_centered {
+    float: left;
+    display: block;
+    margin-right: 7.4229703521%;
+    width: 100%;
+    margin-left: 0%;
+    display: block;
+    float: none;
+  }
+  .three-column_centered:last-child {
+    margin-right: 0;
+  }
 }
 
 .containing-column {
@@ -262,6 +279,18 @@ section:after {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .containing-column:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .containing-column {
+    float: left;
+    display: block;
+    margin-right: 7.4229703521%;
     width: 100%;
     margin-left: 0%;
   }
@@ -296,6 +325,21 @@ section:after {
     padding-right: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  .two-column {
+    float: left;
+    display: block;
+    margin-right: 7.4229703521%;
+    width: 100%;
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+    padding: 0 !important;
+  }
+  .two-column:last-child {
+    margin-right: 0;
+  }
+}
 
 .message-column {
   float: left;
@@ -314,6 +358,18 @@ section:after {
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .message-column:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .message-column {
+    float: left;
+    display: block;
+    margin-right: 7.4229703521%;
+    width: 100%;
+    padding: 0 !important;
   }
   .message-column:last-child {
     margin-right: 0;
@@ -344,11 +400,21 @@ h1 {
   font-weight: 300;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.75em;
+  }
+}
 
 h2 {
   color: #2e3137;
   font-size: 1.875em;
   font-weight: 300;
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 h2.divide {
@@ -490,6 +556,11 @@ p {
   left: 49%;
   z-index: 1;
 }
+@media screen and (max-width: 480px) {
+  .icon-dwnArrowWhite {
+    left: 47%;
+  }
+}
 
 .icon-logoBug {
   position: absolute;
@@ -500,6 +571,11 @@ p {
 @media screen and (max-width: 768px) {
   .icon-logoBug {
     left: 22.5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icon-logoBug {
+    left: -14.5%;
   }
 }
 
@@ -617,8 +693,13 @@ header {
   z-index: 2;
 }
 header h1 {
-  margin-top: 200px;
+  margin-top: 20%;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  header h1 {
+    margin-bottom: 40px;
+  }
 }
 
 .top-container {
@@ -631,11 +712,22 @@ header h1 {
 nav {
   position: relative;
   padding-top: 40px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    text-align: center;
+  }
 }
 nav .icon-contact {
   position: absolute;
   top: 16px;
   right: 0;
+}
+@media screen and (max-width: 480px) {
+  nav .icon-contact {
+    display: none;
+  }
 }
 
 .bgoverlay {
@@ -670,6 +762,12 @@ nav .icon-contact {
 }
 .header__buttons--centered .btn:first-child {
   margin-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  .header__buttons--centered .btn {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
 }
 
 .circle {
@@ -734,13 +832,28 @@ nav .icon-contact {
   height: 600px;
   padding-top: 100px;
 }
+@media screen and (max-width: 768px) {
+  .testomonials {
+    padding-top: 30px;
+  }
+}
 
 .slideshow {
   width: 500px !important;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .slideshow {
+    width: 100% !important;
+  }
+}
 .slideshow .slide {
   width: 500px !important;
+}
+@media screen and (max-width: 480px) {
+  .slideshow .slide {
+    width: 100% !important;
+  }
 }
 .slideshow p {
   font-style: italic;
@@ -756,6 +869,11 @@ nav .icon-contact {
 .pager-column {
   position: absolute;
   bottom: -113px;
+}
+@media screen and (max-width: 768px) {
+  .pager-column {
+    bottom: -93px;
+  }
 }
 
 #pager {
@@ -835,13 +953,21 @@ input:focus, textarea:focus {
 textarea {
   resize: none;
   height: 200px;
-  margin-top: 15px;
 }
 
 form {
   margin-top: 45px;
 }
 
+.fancy-select {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .service-select {
+    margin: 10px;
+  }
+}
 .form__button--right {
   position: relative;
   width: 100%;
@@ -856,6 +982,12 @@ form {
     right: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+  .form__button--right .btn {
+    width: 100%;
+    left: 0;
+  }
+}
 
 footer {
   background: url("../img/footer.jpg") no-repeat center center;
@@ -864,6 +996,11 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   height: 450px;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    overflow: hidden;
+  }
 }
 footer h1 {
   position: relative;
@@ -878,6 +1015,12 @@ footer h1 {
     margin-bottom: 150px;
   }
 }
+@media screen and (max-width: 480px) {
+  footer h1 {
+    font-size: 2.7em;
+    margin-bottom: 94px;
+  }
+}
 footer p {
   font-weight: 300;
   text-align: center;
@@ -890,6 +1033,19 @@ footer p a {
 }
 footer p a:hover {
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  footer p a {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer span {
+    display: none;
+  }
+  footer .mail-link {
+    display: block;
+  }
 }
 
 div.fancy-select {
@@ -1115,6 +1271,15 @@ div.fancy-select ul.options li.hover {
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+@media screen and (max-width: 480px) {
+  .service1 {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 .service1 img, .service2 {
   -webkit-transition: 0.5s ease-in-out;
@@ -1132,6 +1297,15 @@ div.fancy-select ul.options li.hover {
   -ms-transition-delay: 0.4s;
   -o-transition-delay: 0.4s;
   transition-delay: 0.4s;
+}
+@media screen and (max-width: 480px) {
+  .service1 img, .service2 {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .service2 img, .service3 {
@@ -1151,6 +1325,15 @@ div.fancy-select ul.options li.hover {
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
 }
+@media screen and (max-width: 480px) {
+  .service2 img, .service3 {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 .service3 img {
   -webkit-transition: 0.5s ease-in-out;
@@ -1168,6 +1351,15 @@ div.fancy-select ul.options li.hover {
   -ms-transition-delay: 0.6s;
   -o-transition-delay: 0.6s;
   transition-delay: 0.6s;
+}
+@media screen and (max-width: 480px) {
+  .service3 img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .skrollable-after .service1, .skrollable-after .service2, .skrollable-after .service3, .skrollable-after .service1 img, .skrollable-after .service2 img, .skrollable-after .service3 img {

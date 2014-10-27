@@ -22,7 +22,7 @@
 			</div>
 		</nav>
 		<div class="inner-container" data-0="opacity:1;" data--200-top-bottom="opacity:0;">
-			<h1 data-0="margin-top:200px" data--200-top-bottom="margin-top:100px;">Your Passion Deserves a Presence</h1>
+			<h1 data-0="margin-top:20%" data--200-top-bottom="margin-top:10%;">Your Passion Deserves a Presence</h1>
 			<div class="row">
 				<div class="three-column_centered">
 					<div class="header__buttons--centered">
@@ -155,7 +155,7 @@
 			<div class="inner-container">
 				<i class="icon icon-logoBug" data-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;"></i>
 				<h1 data--150-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;">We Are Nobol</h1>
-				<p>&copy; Nobol Creative <?php echo date("Y"); ?> - <a href="mailto:hello@wearenobol.com">hello@wearenobol.com</a> - <i class="icon icon-twitter"></i> <i class="icon icon-facebook"></i> <i class="icon icon-instagram"></i> <i class="icon icon-googlePlus"></i></p>
+				<p>&copy; Nobol Creative <?php echo date("Y"); ?> <span>-</span> <a href="mailto:hello@wearenobol.com" class="mail-link">hello@wearenobol.com</a> <span>-</span> <a href="#"><i class="icon icon-twitter"></i></a> <a href="#"><i class="icon icon-facebook"></i></a> <a href="#"><i class="icon icon-instagram"></i></a> <a href="#"><i class="icon icon-googlePlus"></i></a></p>
 			</div>
 		</footer>
 	</div>

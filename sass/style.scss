@@ -52,29 +52,33 @@ header {
 	width: 100%;
 	z-index: 2;
 	h1 {
-		margin-top: 200px;
+		margin-top: 20%;
 		margin-bottom: 50px;
+		@include media($mobile) {
+			margin-bottom: 40px;
+		}
 	}
-	// @include media($tablet) {
-	// 	@include translate(1px);
-	// }
 }
 .top-container {
 	position: relative;
 	left: 0;
 	background: $white;
 	z-index: 3;
-	// @include media($tablet) {
-	// 	@include translate(2px);
-	// }
 }
 nav {
 	position: relative;
 	padding-top: 40px;
+	width: 100%;
+	@include media($mobile) {
+		text-align: center;
+	}
 	.icon-contact {
 		position: absolute;
 		top: 16px;
 		right: 0;
+		@include media($mobile) {
+			display: none;
+		}
 	}
 }
 .bgoverlay {
@@ -103,6 +107,10 @@ nav {
 		vertical-align: top;
 		&:first-child {
 			margin-right: 15px;
+		}
+		@include media($mobile) {
+			margin-right: 0 !important;
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -160,12 +168,21 @@ nav {
 .testomonials {
 	@include bgcover(testomonials, 600px);
 	padding-top: 100px;
+	@include media($tablet) {
+		padding-top: 30px;
+	}
 }
 .slideshow {
 	width: 500px !important;
 	margin: 0 auto;
+	@include media($mobile) {
+    width: 100% !important;
+  }
 	.slide {
 		width: 500px !important;
+		@include media($mobile) {
+	    width: 100% !important;
+	  }
 	}
 	p {
 		font-style: italic;
@@ -181,6 +198,9 @@ nav {
 .pager-column {
 	position: absolute;
 	bottom: -113px;
+	@include media($tablet) {
+		bottom: -93px;
+	}
 }
 #pager {
 	text-align: center;
@@ -259,10 +279,17 @@ input, textarea {
 textarea {
 	resize: none;
 	height: 200px;
-	margin-top: 15px;
 }
 form {
 	margin-top: 45px;
+}
+.fancy-select {
+	margin-bottom: 18px;
+}
+@include media($mobile) {
+	.service-select {
+		margin: 10px;
+	}
 }
 .form__button--right {
 	position: relative;
@@ -274,12 +301,19 @@ form {
 		@include media($tablet) {
 			right: 50px;
 		}
+		@include media($mobile) {
+			width: 100%;
+			left: 0;
+		}
 	}
 }
 
 //FOOTER STYLES
 footer {
 	@include bgcover(footer, 450px);
+	@include media($mobile) {
+   	overflow: hidden;
+  }
 	h1 {
 		position: relative;
 		z-index: 1;
@@ -289,6 +323,10 @@ footer {
 		margin-bottom: 162px;
 		@include media($tablet) {
 			margin-bottom: 150px;
+		}
+		@include media($mobile) {
+			font-size: 2.7em;
+			margin-bottom: 94px;
 		}
 	}
 	p {
@@ -302,6 +340,17 @@ footer {
 			&:hover {
 				text-decoration: none;
 			}
+			@include media($mobile) {
+				margin-right: 5px;
+			}
+		}
+	}
+	@include media($mobile) {
+		span {
+			display: none;
+		}
+		.mail-link {
+			display: block;
 		}
 	}
 }
