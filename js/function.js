@@ -20,6 +20,8 @@ $(document).ready(function() {
     modules : 'file'
   });
 
+  var s = skrollr.init();
+
   $(".top-container").css("top", $(window).height());
 
   $(window).resize(function() {
@@ -57,6 +59,11 @@ $(document).ready(function() {
     return false;
   });
 	
-	var s = skrollr.init();
+	
+  window.onload=function(){s.refresh()};
+
+  // document.addEventListener('orientationchange', function() {
+
+  // });
 
 });

@@ -153,8 +153,8 @@
 		<footer>
 			<div class="bgoverlay bgoverlay__footer"></div>
 			<div class="inner-container">
-				<i class="icon icon-logoBug" data--250-bottom-top="opacity: 1;" data-0-bottom-top="opacity: 0;"></i>
-				<h1 data--250-bottom-top="opacity: 1;" data--150-bottom-top="opacity: 0;">We Are Nobol</h1>
+				<i class="icon icon-logoBug" data-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;"></i>
+				<h1 data--150-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;">We Are Nobol</h1>
 				<p>&copy; Nobol Creative <?php echo date("Y"); ?> - <a href="mailto:hello@wearenobol.com">hello@wearenobol.com</a> - <i class="icon icon-twitter"></i> <i class="icon icon-facebook"></i> <i class="icon icon-instagram"></i> <i class="icon icon-googlePlus"></i></p>
 			</div>
 		</footer>

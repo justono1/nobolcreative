@@ -4,14 +4,14 @@ $tablet: new-breakpoint(max-width 768px 12);
 section, header, nav, footer {
 	display: block;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 section {
 	@include outer-container(100%);
 }
 .inner-container {
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	@include outer-container(994px);
 	@include media($tablet) {
 		@include outer-container(748px);
@@ -60,4 +60,7 @@ section {
 }
 .row {
 	@include row();
+}
+.clear{
+	clear: both;
 }
