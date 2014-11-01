@@ -35,26 +35,26 @@
 		<i class="icon icon-dwnArrowWhite"></i>
 	</header>
 	<div class="top-container" id="skrollr-body">
-		<section class="services" data-400-top-top="">
+		<section class="services">
 			<h2 class="divide">Let Us Build You a Website You Can Be Proud Of</h2>
 			<div class="inner-container">
 				<div class="three-column">
-					<div class="circle circle__blue service1">
-						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design">
+					<div class="circle circle__blue service1" data-400-top-top="transform:scale(1);">
+						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design" data-400-top-top="transform:scale(1);">
 					</div>
 					<h3>Website Design</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
 				</div>
 				<div class="three-column">
-					<div class="circle circle__orange service2">
-						<img src="img/svg/browser.svg" class="browser-svg" alt="Development and Testing">
+					<div class="circle circle__orange service2" data-400-top-top="transform:scale(1);">
+						<img src="img/svg/browser.svg" class="browser-svg" alt="Development and Testing" data-400-top-top="transform:scale(1);">
 					</div>
 					<h3>Development &amp; Testing</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
 				</div>
 				<div class="three-column">
-					<div class="circle circle__blue service3">
-						<img src="img/svg/identity.svg" class="identity-svg" alt="Branding and Identity">
+					<div class="circle circle__blue service3" data-400-top-top="transform:scale(1);">
+						<img src="img/svg/identity.svg" class="identity-svg" alt="Branding and Identity" data-400-top-top="transform:scale(1);">
 					</div>
 					<h3>Branding &amp; Identity</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>

@@ -314,19 +314,12 @@ footer {
 	@include media($mobile) {
    	overflow: hidden;
   }
+  .inner-container {
+  	text-align: center;
+  }
 	h1 {
-		position: relative;
-		z-index: 1;
-		width: 100%;
-		display: inline-block;
-		margin-top: 180px;
-		margin-bottom: 162px;
-		@include media($tablet) {
-			margin-bottom: 150px;
-		}
 		@include media($mobile) {
 			font-size: 2.7em;
-			margin-bottom: 94px;
 		}
 	}
 	p {

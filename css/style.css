@@ -562,23 +562,6 @@ p {
   }
 }
 
-.icon-logoBug {
-  position: absolute;
-  left: 29.5%;
-  top: 28px;
-  z-index: 0;
-}
-@media screen and (max-width: 768px) {
-  .icon-logoBug {
-    left: 22.5%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .icon-logoBug {
-    left: -14.5%;
-  }
-}
-
 .computer-svg, .browser-svg, .identity-svg {
   position: absolute;
 }
@@ -1002,23 +985,12 @@ footer {
     overflow: hidden;
   }
 }
-footer h1 {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  display: inline-block;
-  margin-top: 180px;
-  margin-bottom: 162px;
-}
-@media screen and (max-width: 768px) {
-  footer h1 {
-    margin-bottom: 150px;
-  }
+footer .inner-container {
+  text-align: center;
 }
 @media screen and (max-width: 480px) {
   footer h1 {
     font-size: 2.7em;
-    margin-bottom: 94px;
   }
 }
 footer p {
@@ -1360,12 +1332,4 @@ div.fancy-select ul.options li.hover {
     -ms-transform: scale(1);
     transform: scale(1);
   }
-}
-
-.skrollable-after .service1, .skrollable-after .service2, .skrollable-after .service3, .skrollable-after .service1 img, .skrollable-after .service2 img, .skrollable-after .service3 img {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
