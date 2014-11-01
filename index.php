@@ -10,7 +10,7 @@
 <body>
 	<div class="notification">
 		<div class="inner-container">
-			<p class="prompt">YOur message has successfully been sent</p>
+			<p class="prompt"></p>
 		</div>
 	</div>
 	<header data-0="background-position: 0px 0px;" data-top-bottom="background-position: 0px -60px;">
@@ -35,29 +35,29 @@
 		<i class="icon icon-dwnArrowWhite"></i>
 	</header>
 	<div class="top-container" id="skrollr-body">
-		<section class="services">
+		<section class="services" data-400-top-top="">
 			<h2 class="divide">Let Us Build You a Website You Can Be Proud Of</h2>
 			<div class="inner-container">
 				<div class="three-column">
-					<div class="circle circle__blue service1" data-400-top-top="transform:scale(1);">
-						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design" data-400-top-top="transform:scale(1);">
+					<div class="circle circle__blue service1">
+						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design">
 					</div>
 					<h3>Website Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
+					<p>Your site is not just a pretty face, its a well thought out user experience that generates your company business. We take your ideas and mold them into stunning detail that will wow your customers and competition.</p>
 				</div>
 				<div class="three-column">
-					<div class="circle circle__orange service2" data-400-top-top="transform:scale(1);">
-						<img src="img/svg/browser.svg" class="browser-svg" alt="Development and Testing" data-400-top-top="transform:scale(1);">
+					<div class="circle circle__orange service2">
+						<img src="img/svg/browser.svg" class="browser-svg" alt="Development and Testing">
 					</div>
 					<h3>Development &amp; Testing</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
+					<p>Anything from one page promotional sites to a full blown web applications we got you covered. Lets us help you and bring your ideas to life. Robust, in depth, cross platform, SEO optimized digital experiences await.</p>
 				</div>
 				<div class="three-column">
-					<div class="circle circle__blue service3" data-400-top-top="transform:scale(1);">
-						<img src="img/svg/identity.svg" class="identity-svg" alt="Branding and Identity" data-400-top-top="transform:scale(1);">
+					<div class="circle circle__blue service3">
+						<img src="img/svg/identity.svg" class="identity-svg" alt="Branding and Identity">
 					</div>
 					<h3>Branding &amp; Identity</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
+					<p>When it comes to your company we think you should stand out amongst the crowd. Let us help you create, enhance or extend your brand presence and increase your brand equity.</p>
 				</div>
 			</div>
 		</section>
@@ -77,7 +77,7 @@
 									<img src="img/testomonial/djforella.jpg" alt="Branding, Website Design, Website Devlopment - Justin Forella, DJForella">
 								</div>
 							</div>
-							<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum fuga, exercitationem provident tempora nesciunt.""
+							<p>“I can't say enough about these guys, an absolute pleasure to work with. They were very professional and really listened to what I wanted. I would recommend these guys to anyone looking for a website.”
 							</p>
 							<p><span class="person">Justin Forella</span><br><a href="http://djforella.com" target="_blank">djforella.com</a></p>
 						</li>
@@ -104,7 +104,7 @@
 					<div class="containing-column">
 						<div class="row">
 							<div class="two-column">
-								<input name="name" placeholder="Name" value="" type="text">
+								<input name="name" placeholder="Name" value="" type="text" data-validation="required">
 							</div>
 							<div class="two-column">
 								<input name="company" placeholder="Company" value="" type="text">
@@ -112,35 +112,35 @@
 						</div>
 						<div class="row">
 							<div class="two-column">
-								<input name="email" placeholder="Email" value="" type="text">
+								<input name="email" placeholder="Email" value="" type="text" data-validation="required">
 							</div>
 							<div class="two-column">
-								<input name="phone" placeholder="Phone" value="" type="text">
+								<input name="phone" placeholder="Phone" value="" type="text" data-validation="required">
 							</div>
 						</div>
 						<div class="row">
 							<div class="two-column">
-								<select class="services-select" name="services">
+								<select class="services-select" name="services" data-validation="required">
 									<option value="">Services Needed</option>
-									<option value="Service 1">Service 1</option>
-									<option value="Service 2">Service 2</option>
-									<option value="Service 3">Service 3</option>
-									<option value="Service 4">Service 4</option>
+									<option value="Design">Web Design</option>
+									<option value="Dev">Web Development</option>
+									<option value="Design-Dev">Web Design &amp; Dev</option>
+									<option value="Eveything">The whole package</option>
 								</select>
 							</div>
 							<div class="two-column">
-								<select class="budget-select" name="budget">
+								<select class="budget-select" name="budget" data-validation="required">
 									<option value="">Budget</option>
-									<option value="Budget 1">Budget 1</option>
-									<option value="Budget 2">Budget 2</option>
-									<option value="Budget 3">Budget 3</option>
-									<option value="Budget 4">Budget 4</option>
+									<option value="3k-5k">$3,000 - $5,000</option>
+									<option value="5k-10k">$5,000 - $10,000</option>
+									<option value="10k-15k">$10,000 - $15,000</option>
+									<option value="15k+">$15,000 +</option>
 								</select>
 							</div>
 						</div>
 						<div class="row">
 							<div class="message-column">
-								<textarea name="message" placeholder="Tell us what you want" value=""></textarea>
+								<textarea name="message" placeholder="Tell us what you want" value="" data-validation="required"></textarea>
 							</div>
 						</div>
 						<div class="form__button--right">

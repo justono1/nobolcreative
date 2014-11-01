@@ -120,8 +120,8 @@
     @include transform-scale(1);
   }
 }
-// .skrollable-after {
-//   .service1, .service2, .service3, .service1 img, .service2 img, .service3 img {
-//     @include transform-scale(1);
-//   }
-// }
+.skrollable-after {
+  .service1, .service2, .service3, .service1 img, .service2 img, .service3 img {
+    @include transform-scale(1);
+  }
+}

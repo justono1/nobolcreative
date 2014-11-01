@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   $(".slideshow").cycle({
   	fx: "fade",
-  	timeout: 2000,
+  	timeout: 10000,
   	speed: 1000,
   	pager: '#pager',
   	pause: true,
@@ -17,7 +17,6 @@ $(document).ready(function() {
   $.validate({
     validateOnBlur : false,
     showHelpOnFocus : false,
-    modules : 'file'
   });
 
   var s = skrollr.init();
@@ -45,14 +44,19 @@ $(document).ready(function() {
       url: formUrl,
       type: "POST",
       data: postData,
+      dataType: "json",
       success: function(data) {
-        $(".notification").css("background-color", "#00bf61").slideDown("slow");
-        $(".notification p").html(data);
+        if(data.status == "error") {
+          $(".notification").css("background-color", "#e12e34").slideDown("slow");
+        } else {
+          $(".notification").css("background-color", "#00bf61").slideDown("slow");
+        }
+        $(".notification p").html(data.response);
         closeNotification();
       },
       error: function(data) {
         $(".notification").css("background-color", "#e12e34").slideDown("slow");
-        $(".notification p").html(data);
+        $(".notification p").html(data.response);
         closeNotification();
       }
     });

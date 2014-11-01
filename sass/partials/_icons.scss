@@ -51,7 +51,16 @@ $size3: #{(368/16)}em;
 	}
 }
 .icon-logoBug {
-	
+	position: absolute;
+	left: 29.5%;
+	top: 28px;
+	z-index: 0;
+	@include media($tablet) {
+		left: 22.5%;
+	}
+	@include media($mobile) {
+   	left: -14.5%;
+  }
 }
 
 .computer-svg, .browser-svg, .identity-svg {
