@@ -51,6 +51,7 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 2;
+	//@include translate(-1px);
 	h1 {
 		margin-top: 20%;
 		margin-bottom: 50px;
@@ -59,11 +60,17 @@ header {
 		}
 	}
 }
+.gap-100 {
+	height: 100% !important;
+	width: 100% !important;
+	display: block;
+	background: transparent !important;
+}
 .top-container {
 	position: relative;
-	left: 0;
 	background: $white;
 	z-index: 3;
+	// margin-top: 400px;
 }
 nav {
 	position: relative;
@@ -324,15 +331,7 @@ footer {
    	overflow: hidden;
   }
 	h1 {
-		position: relative;
-		z-index: 1;
-		width: 100%;
-		display: inline-block;
-		margin-top: 180px;
-		margin-bottom: 162px;
-		@include media($tablet) {
-			margin-bottom: 150px;
-		}
+		opacity: 0;
 		@include media($mobile) {
 			font-size: 2.7em;
 			margin-bottom: 94px;

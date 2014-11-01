@@ -20,6 +20,7 @@ $(document).ready(function() {
     scrollToTopOnError : false
   });
 
+<<<<<<< HEAD
   var s = skrollr.init();
 
   skrollr.menu.init(s, {
@@ -39,11 +40,36 @@ $(document).ready(function() {
 
   $(window).resize(function() {
   	$(".top-container").css("margin-top", $(window).height());
+=======
+  var s = skrollr.init({
+    forceHeight: false
   });
+
+  skrollr.menu.init(s, {
+      animate: true,
+      easing: 'sqrt',
+      scale: 2,
+      duration: function(currentTop, targetTop) {
+          return 500;
+      },
+      handleLink: function(link) {
+          return 400;
+      },
+      complexLinks: false
+>>>>>>> menuTest
+  });
+
 
   function closeNotification() {
     $(".notification").delay(3000).slideUp("slow");
   }
+
+  $(".top-container").css("top", $(window).height());
+
+  $(window).resize(function() {
+    $(".top-container").css("top", $(window).height());
+  });
+
 
   $("#ajaxForm").submit(function() {
     var postData = $(this).serializeArray();
