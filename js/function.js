@@ -20,22 +20,34 @@ $(document).ready(function() {
     modules : 'file'
   });
 
-  var s = skrollr.init();
-
-  $(".top-container").css("top", $(window).height());
-
-  $(window).resize(function() {
-  	$(".top-container").css("top", $(window).height());
+  var s = skrollr.init({
+    forceHeight: false
   });
 
-  $(".icon-contact").on("touchstart click", function() {
-    $("html, body").animate({scrollTop: $(".contact").offset().top - 78}, 800);
-    return false;
+  skrollr.menu.init(s, {
+      animate: true,
+      easing: 'sqrt',
+      scale: 2,
+      duration: function(currentTop, targetTop) {
+          return 500;
+      },
+      handleLink: function(link) {
+          return 400;
+      },
+      complexLinks: false
   });
+
 
   function closeNotification() {
     $(".notification").delay(2000).slideUp("slow");
   }
+
+  $(".top-container").css("top", $(window).height());
+
+  $(window).resize(function() {
+    $(".top-container").css("top", $(window).height());
+  });
+
 
   $("#ajaxForm").submit(function() {
     var postData = $(this).serializeArray();

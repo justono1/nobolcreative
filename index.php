@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="three-column_centered">
 					<div class="header__buttons--centered">
-						<div class="btn btn-orange">Contact Us</div>
+						<a href="#contact" class="btn btn-orange">Contact Us</a>
 						<div class="btn btn-outline">Learn More</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design" data-400-top-top="transform:scale(1);">
 					</div>
 					<h3>Website Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
+					<p><a href="#contact">Lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Error facere similique vel nobis molestiae obcaecati quam voluptatum adipisci odit cum, possimus, voluptas reprehenderit molestias deserunt.</p>
 				</div>
 				<div class="three-column">
 					<div class="circle circle__orange service2" data-400-top-top="transform:scale(1);">
@@ -97,7 +97,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
+		<section id="contact" class="contact">
 			<h2 class="divide">Lets Get Started</h2>
 			<div class="inner-container">
 				<form id="ajaxForm" action="./process/">
@@ -153,8 +153,8 @@
 		<footer>
 			<div class="bgoverlay bgoverlay__footer"></div>
 			<div class="inner-container">
-				<i class="icon icon-logoBug" data-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;"></i>
-				<h1 data--150-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;">We Are Nobol</h1>
+				<i class="icon icon-logoBug" data-bottom-top="opacity: 0;" data--25-bottom="opacity: 1;"></i>
+				<h1 data-bottom-top="opacity: 0;" data--25-bottom="opacity: 1;">We Are Nobol</h1>
 				<p>&copy; Nobol Creative <?php echo date("Y"); ?> <span>-</span> <a href="mailto:hello@wearenobol.com" class="mail-link">hello@wearenobol.com</a> <span>-</span> <a href="#"><i class="icon icon-twitter"></i></a> <a href="#"><i class="icon icon-facebook"></i></a> <a href="#"><i class="icon icon-instagram"></i></a> <a href="#"><i class="icon icon-googlePlus"></i></a></p>
 			</div>
 		</footer>
@@ -165,6 +165,7 @@
 	<script src="js/fancySelect.js"></script>
 	<script src="js/cycle.js"></script>
 	<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+	<script src="bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
 	<script src="js/function.js"></script>
 </body>
 </html>
