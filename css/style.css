@@ -1125,10 +1125,3 @@ div.fancy-select ul.options li.hover {
       -o-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); } }
-
-.skrollable-after .service1, .skrollable-after .service2, .skrollable-after .service3, .skrollable-after .service1 img, .skrollable-after .service2 img, .skrollable-after .service3 img {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
