@@ -330,11 +330,12 @@ footer {
 	@include media($mobile) {
    	overflow: hidden;
   }
+  .inner-container {
+  	text-align: center;
+  }
 	h1 {
-		opacity: 0;
 		@include media($mobile) {
 			font-size: 2.7em;
-			margin-bottom: 94px;
 		}
 	}
 	p {
