@@ -520,7 +520,8 @@ p {
   -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-size: 1em;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  text-decoration: none; }
 
 .btn-orange {
   font-weight: 700;

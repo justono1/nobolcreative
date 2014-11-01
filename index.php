@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Nobol Creative</title>
+	<meta name="keywords" content="nobol creative, nobol, creative, grand rapids, web design, web development, branding, web" />
+	<meta name="description" content="A team of creative minds focused on developing brands, appealing design, and website development in Grand Rapids Michigan." />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,300' rel='stylesheet' type='text/css'>
 	<meta name="viewport" id="viewport" content="initial-scale=1, maximum-scale=1">
@@ -18,7 +21,7 @@
 		<nav>
 			<div class="inner-container">
 				<i class="icon icon-logo"></i>
-				<i class="icon icon-contact"></i>
+				<a href="#contact"><i class="icon icon-contact"></i></a>
 			</div>
 		</nav>
 		<div class="inner-container" data-0="opacity:1;" data--200-top-bottom="opacity:0;">
@@ -26,8 +29,8 @@
 			<div class="row">
 				<div class="three-column_centered">
 					<div class="header__buttons--centered">
-						<div class="btn btn-orange">Contact Us</div>
-						<div class="btn btn-outline">Learn More</div>
+						<a href="#contact" class="btn btn-orange">Contact Us</a>
+						<a href="#services" class="btn btn-outline">Learn More</a>
 					</div>
 				</div>
 			</div>
@@ -35,7 +38,7 @@
 		<i class="icon icon-dwnArrowWhite"></i>
 	</header>
 	<div class="top-container" id="skrollr-body">
-		<section class="services" data-400-top-top="">
+		<section id="services" class="services" data-400-top-top="">
 			<h2 class="divide">Let Us Build You a Website You Can Be Proud Of</h2>
 			<div class="inner-container">
 				<div class="three-column">
@@ -97,7 +100,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
+		<section id="contact" class="contact">
 			<h2 class="divide">Lets Get Started</h2>
 			<div class="inner-container">
 				<form id="ajaxForm" action="./process/">
@@ -165,6 +168,7 @@
 	<script src="js/fancySelect.js"></script>
 	<script src="js/cycle.js"></script>
 	<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+	<script src="bower_components/skrollr-menu/dist/skrollr.menu.min.js"></script>
 	<script src="js/function.js"></script>
 </body>
 </html>

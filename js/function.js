@@ -22,15 +22,23 @@ $(document).ready(function() {
 
   var s = skrollr.init();
 
+  skrollr.menu.init(s, {
+      animate: true,
+      easing: 'sqrt',
+      scale: 2,
+      duration: function(currentTop, targetTop) {
+          return 500;
+      },
+      handleLink: function(link) {
+          return 400;
+      },
+      complexLinks: false
+  });
+
   $(".top-container").css("top", $(window).height());
 
   $(window).resize(function() {
   	$(".top-container").css("top", $(window).height());
-  });
-
-  $(".icon-contact").on("touchstart click", function() {
-    $("html, body").animate({scrollTop: $(".contact").offset().top - 78}, 800);
-    return false;
   });
 
   function closeNotification() {
