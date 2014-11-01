@@ -38,7 +38,7 @@
 		<i class="icon icon-dwnArrowWhite"></i>
 	</header>
 	<div class="top-container" id="skrollr-body">
-		<section id="services" class="services" data-400-top-top="">
+		<section id="services" class="services">
 			<h2 class="divide">Let Us Build You a Website You Can Be Proud Of</h2>
 			<div class="inner-container">
 				<div class="three-column">

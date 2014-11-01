@@ -829,12 +829,11 @@ footer {
   @media screen and (max-width: 480px) {
     footer {
       overflow: hidden; } }
-  footer h1 {
-    opacity: 0; }
-    @media screen and (max-width: 480px) {
-      footer h1 {
-        font-size: 2.7em;
-        margin-bottom: 94px; } }
+  footer .inner-container {
+    text-align: center; }
+  @media screen and (max-width: 480px) {
+    footer h1 {
+      font-size: 2.7em; } }
   footer p {
     font-weight: 300;
     text-align: center;
