@@ -35,10 +35,10 @@ $(document).ready(function() {
       complexLinks: false
   });
 
-  $(".top-container").css("top", $(window).height());
+  $(".top-container").css("margin-top", $(window).height());
 
   $(window).resize(function() {
-  	$(".top-container").css("top", $(window).height());
+  	$(".top-container").css("margin-top", $(window).height());
   });
 
   function closeNotification() {
