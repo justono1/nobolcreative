@@ -1,6 +1,6 @@
 <?php
 
-	$to = "justin@wearenobol.com";
+	$to = "hello@wearenobol.com";
 	$phone = $_POST['phone'];
 	$sender = $_POST['name'];
 	$from = $_POST['email'];
