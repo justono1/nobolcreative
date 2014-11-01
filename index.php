@@ -155,7 +155,7 @@
 			<div class="inner-container">
 				<i class="icon icon-logoBug" data-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;"></i>
 				<h1 data--150-bottom-top="opacity: 0;" data--250-bottom-top="opacity: 1;">We Are Nobol</h1>
-				<p>&copy; Nobol Creative <?php echo date("Y"); ?> <span>-</span> <a href="mailto:hello@wearenobol.com" class="mail-link">hello@wearenobol.com</a> <span>-</span> <a href="#"><i class="icon icon-twitter"></i></a> <a href="#"><i class="icon icon-facebook"></i></a> <a href="#"><i class="icon icon-instagram"></i></a> <a href="#"><i class="icon icon-googlePlus"></i></a></p>
+				<p>&copy; Nobol Creative <?php echo date("Y"); ?> <span>-</span> <a href="mailto:hello@wearenobol.com" class="mail-link">hello@wearenobol.com</a> <span>-</span> <a href="https://twitter.com/nobolcreative" target="_blank"><i class="icon icon-twitter"></i></a> <a href="https://www.facebook.com/nobolcreative" target="_blank"><i class="icon icon-facebook"></i></a> <a href="http://instagram.com/nobolcreative" target="_blank"><i class="icon icon-instagram"></i></a> <a href="https://plus.google.com/u/0/b/105767629751059726489/105767629751059726489/posts" target="_blank"><i class="icon icon-googlePlus"></i></a></p>
 			</div>
 		</footer>
 	</div>
