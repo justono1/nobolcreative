@@ -15,6 +15,8 @@
 	$body = "Message from: ".$sender."\r\nPhone: ".$phone."\r\nEmail: ".$from."\r\n";
 	$body.= "Sent: ".date('l F jS')."\r\n\r\n";
 	
+	$body.= "Services Required: ".$services."\r\nBudget: ".$budget."\r\n\r\n";
+
 	$body.= $message;
 
 	$subject = "Website Contact Form";
@@ -31,9 +33,13 @@
 	}
 	
 	if($sent) {
-		echo json_encode("Your message has been sent successfully.");
+		$data['status'] = "success";
+		$data['response'] = "Your message has been sent successfully.";
+		echo json_encode($data);
 	} else {
-		echo json_encode("Whoops there was an error, please try again.");
+		$data['status'] = "error";
+		$data['response'] = "Whoops there was an error, please try again.";
+		echo json_encode($data);
 	}
 
 ?>

@@ -276,6 +276,15 @@ input, textarea {
 		outline: none;
 	}
 }
+.has-error {
+	border-color: $red;
+	.trigger {
+		border-color: $red !important;
+	}
+}
+.form-error {
+	display: none;
+}
 textarea {
 	resize: none;
 	height: 200px;

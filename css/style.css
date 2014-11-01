@@ -789,6 +789,14 @@ input, textarea {
     box-shadow: none;
     outline: none; }
 
+.has-error {
+  border-color: #e12e34; }
+  .has-error .trigger {
+    border-color: #e12e34 !important; }
+
+.form-error {
+  display: none; }
+
 textarea {
   resize: none;
   height: 200px; }

@@ -43,21 +43,21 @@
 						<img src="img/svg/computer.svg" class="computer-svg" alt="Web Design">
 					</div>
 					<h3>Website Design</h3>
-					<p>Your site is not just a pretty face, its a well thought out user experience that generates your company business. We take your ideas and mold them into stunning detail that will wow your customers and competition.</p>
+					<p>Your site is not just a pretty face, it is a well thought out user experience that generates business for your company. Crafting beautiful user-centric designs that meet your goals is at the core of what we do</p>
 				</div>
 				<div class="three-column">
 					<div class="circle circle__orange service2">
 						<img src="img/svg/browser.svg" class="browser-svg" alt="Development and Testing">
 					</div>
 					<h3>Development &amp; Testing</h3>
-					<p>Anything from one page promotional sites to a full blown web applications we got you covered. Lets us help you and bring your ideas to life. Robust, in depth, cross platform, SEO optimized digital experiences await.</p>
+					<p>From one page promotional sites to full blown web applications, we have got you covered. Let us help you bring your vision to life. An in depth, robust, cross platform, SEO optimized, digital experience awaits you.</p>
 				</div>
 				<div class="three-column">
 					<div class="circle circle__blue service3">
 						<img src="img/svg/identity.svg" class="identity-svg" alt="Branding and Identity">
 					</div>
 					<h3>Branding &amp; Identity</h3>
-					<p>When it comes to your company we think you should stand out amongst the crowd. Let us help you create, enhance or extend your brand presence and increase your brand equity.</p>
+					<p>When it comes to your company, we want you to stand out against the crowd. Let us help you create, enhance and extend your brand presence and increase your brand equity.</p>
 				</div>
 			</div>
 		</section>

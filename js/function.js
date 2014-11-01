@@ -15,8 +15,9 @@ $(document).ready(function() {
 	});
 
   $.validate({
-    validateOnBlur : false,
+    validateOnBlur : true,
     showHelpOnFocus : false,
+    scrollToTopOnError : false
   });
 
   var s = skrollr.init();
@@ -33,7 +34,7 @@ $(document).ready(function() {
   });
 
   function closeNotification() {
-    $(".notification").delay(2000).slideUp("slow");
+    $(".notification").delay(3000).slideUp("slow");
   }
 
   $("#ajaxForm").submit(function() {
